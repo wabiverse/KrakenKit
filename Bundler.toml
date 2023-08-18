@@ -1,0 +1,12 @@
+[apps.KrakenKit]
+product = "KrakenKit"
+version = "1.0.0"
+category = "public.app-category.graphics-design"
+bundle_identifier = "foundation.wabi.KrakenKit"
+minimum_macos_version = "14"
+# icon = "icon.png"
+# prebuild_script = "./utils/prebuild.sh"
+# postbuild_script = "./utils/postbuild.sh"
+
+[apps.KrakenKit.extra_plist_entries]
+commit = "{COMMIT_HASH}"
