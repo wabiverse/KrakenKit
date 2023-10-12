@@ -15,18 +15,18 @@ let package = Package(
     .library(
       name: "KrakenKit",
       targets: ["KrakenKit"]
-    )
+    ),
   ],
   targets: [
     .target(
-      name: "KrakenKit",
-      resources: [
-        .process("Resources"),
-      ]
+      name: "KrakenKit"
     ),
     .executableTarget(
       name: "KrakenApp",
-      dependencies: ["KrakenKit"]
+      dependencies: ["KrakenKit"],
+      resources: [
+        .process("Resources"),
+      ]
     ),
     .testTarget(
       name: "KrakenKitTests",
